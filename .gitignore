@@ -1,0 +1,13 @@
+# Compiled binaries
+main
+go-web-app
+*.exe
+*.test
+# Secrets and local config
+.env
+*.pem
+kubeconfig
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
