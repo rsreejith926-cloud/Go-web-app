@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/rsreejith926-cloud/<your-repo-name>.git
+    repoURL: https://github.com/rsreejith926-cloud/Go-web-app.git
     targetRevision: main
     path: helm/go-web-app-chart
   destination:
