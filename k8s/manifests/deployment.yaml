@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: go-web-app
-        image: sreehub/go-web-app:v1
+        image: sreehub/go-web-app:42348594921
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
