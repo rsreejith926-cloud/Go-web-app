@@ -1,5 +1,5 @@
 image:
   repository: sreehub/go-web-app
   pullPolicy: IfNotPresent
-  tag: "v1"
+  tag: "42346941844"
 replicaCount: 2
