@@ -1,90 +1,48 @@
-<Docktype html>
-<html>
-    <head>
-        <title>About</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Sree</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="brand" href="/home">Sree</a>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about" class="active">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>About me</h1>
+    <p>I'm a software developer who enjoys building practical business software, from billing and POS
+       systems to web platforms, and I'm growing into DevOps: containers, CI/CD, cloud and Kubernetes.</p>
 
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
+    <h2>Education &amp; experience</h2>
+    <ul class="timeline">
+      <li><strong>Python Developer Intern, Krisc</strong>
+          <span>Worked on Python applications as part of a development team.</span></li>
+      <li><strong>B.E. Computer Engineering</strong>
+          <span>GKM College of Engineering and Technology, Chennai &middot; Graduated June 2025</span></li>
+    </ul>
 
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            main {
-                padding: 20px;
-            }
-
-            section {
-                margin-bottom: 20px;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <h1>About the Author</h1>
-                <p>Hi Everyone, My name is Abhishek and welcome to my channel :)</p>
-
-                    <p>    I am an opensource enthusiast and a great believer in sharing knowledge. </p>
-                        <p>  I have my footprints in popular opensource projects like Argo CD, Argo CD Operator, Argo Rollouts Manager, GitOps Operator, F5 Ingress Controller, Nginx Ingress Controller by Nginx and others. </p>
-                    
-                            <p> Apart from working with Red Hat as a GitOps product lead, I also hold below positions in OpenSource communities</p>
-                                <p>  - Maintainer of Argo CD Operator</p>
-                                    <p> - Creator of Argo Rollouts Manager</p>
-                                        <p> - Maintainer of RedHat Developer (GitOps operator)</p>
-                                            <p> - Member of Argo Project</p>
-                                                <p> - Member of Argo SIG Security</p>
-                    
-                                                    <p> If you want to learn complete devops for free with practical projects, checkout the playlist</p>
-                                                        <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa"> Playlists</a></p>
-                    
-                                                            <p> Please subscribe to the channel to keep learning and growing together. Thanks :)</p>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; Abhishek.Veeramalla</p>
-        </footer>
-    </body>
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card"><h3>Development</h3>
+        <ul class="chips"><li>Python</li><li>Flask</li><li>FastAPI</li><li>SQL</li><li>Go (learning)</li></ul></div>
+      <div class="card"><h3>Cloud &amp; DevOps</h3>
+        <ul class="chips"><li>AWS EC2</li><li>S3</li><li>VPC</li><li>IAM</li><li>Docker</li>
+        <li>GitHub Actions</li><li>Jenkins</li><li>Kubernetes</li><li>Helm</li><li>Argo CD</li></ul></div>
+      <div class="card"><h3>Data &amp; tools</h3>
+        <ul class="chips"><li>SQLite</li><li>MySQL</li><li>Supabase</li><li>Git</li><li>Linux</li>
+        <li>PyInstaller</li><li>pywebview</li></ul></div>
+    </div>
+  </main>
+  <footer>&copy; 2026 Sree &middot; Built with Go, deployed with Docker, Kubernetes and Argo CD</footer>
+</body>
 </html>
