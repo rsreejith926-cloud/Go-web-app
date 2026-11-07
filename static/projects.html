@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Sree</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="brand" href="/home">Sree</a>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/projects" class="active">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Projects</h1>
+    <p>A mix of business applications and DevOps work.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>CI/CD &amp; GitOps pipeline (this site)</h3>
+        <p>A Go web app with a multi-stage Dockerfile. GitHub Actions builds, tests and lints it,
+           pushes a uniquely tagged image to Docker Hub and updates the Helm chart. Argo CD syncs the
+           change to Kubernetes automatically.</p>
+        <p class="tech">Go &middot; Docker &middot; GitHub Actions &middot; Helm &middot; Argo CD &middot; Kubernetes</p>
+        <a href="https://github.com/rsreejith926-cloud/Go-web-app">View on GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Billing &amp; POS desktop apps</h3>
+        <p>Point-of-sale and billing applications for retail and service businesses, packaged as
+           Windows desktop apps.</p>
+        <p class="tech">Python &middot; FastAPI/Flask &middot; SQLite &middot; pywebview &middot; PyInstaller</p>
+      </div>
+
+      <div class="card">
+        <h3>Restaurant mobile ordering server</h3>
+        <p>A Flask server that lets customers place orders from their phones, hosted on AWS EC2.</p>
+        <p class="tech">Python &middot; Flask &middot; AWS EC2</p>
+      </div>
+
+      <div class="card">
+        <h3>Lab report &amp; billing app</h3>
+        <p>A desktop application for generating lab reports and bills, shipped as a Windows executable.</p>
+        <p class="tech">Python &middot; Flask &middot; SQLite</p>
+      </div>
+
+      <div class="card">
+        <h3>Spare parts shop management</h3>
+        <p>A web app for managing stock and sales in a bike spare parts shop.</p>
+        <p class="tech">Python &middot; Flask &middot; Supabase</p>
+      </div>
+    </div>
+  </main>
+  <footer>&copy; 2026 Sree &middot; Built with Go, deployed with Docker, Kubernetes and Argo CD</footer>
+</body>
+</html>
