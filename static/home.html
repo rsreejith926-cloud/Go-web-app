@@ -1,89 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sree | Software Developer &amp; DevOps</title>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="courses">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <a class="brand" href="/home">Sree</a>
+      <ul>
+        <li><a href="/home" class="active">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Hi, I'm Sree</h1>
+      <p class="role">Software developer &amp; aspiring DevOps engineer</p>
+      <p>I build web and desktop applications, and I automate how they are built, shipped and run.
+         Based in Tamil Nadu, India.</p>
+      <a class="btn" href="/projects">View my projects</a>
+      <a class="btn secondary" href="/contact">Get in touch</a>
+    </section>
 
-    <main>
-        <section>
-            <h1>Learn DevOps from Basics</h1>
-            <p>The main purpose of this website is to guide people on how to learn DevOps 
-                from basics for Free. We will provide you with the best resources to learn.
-            </p>
-        </section>
+    <h2>What I work with</h2>
+    <ul class="chips">
+      <li>Python</li><li>Flask</li><li>FastAPI</li><li>SQL</li>
+      <li>AWS (EC2, S3, VPC, IAM)</li><li>Docker</li><li>GitHub Actions</li>
+      <li>Kubernetes</li><li>Helm</li><li>Argo CD</li><li>Jenkins</li>
+      <li>Git</li><li>Linux</li>
+    </ul>
 
-        <section>
-            <h2>Overview</h2>
-            <p> Zero to Hero courses on all DevOps tools and popular Cloud(AWS and Azure) platform</p>
-        </section>
-
-        <section>
-            <h2>Courses Offered</h2>
-            <p>Please look at the <a href="courses">courses</a> section.</p>  
-        </section>
-    </main>
-
-    
+    <div class="note">
+      <strong>About this site:</strong> this page is served by a small Go app. Every push to GitHub
+      is built and tested by GitHub Actions, packaged as a Docker image, and rolled out to Kubernetes
+      by Argo CD, with no manual deploy steps.
+    </div>
+  </main>
+  <footer>&copy; 2026 Sree &middot; Built with Go, deployed with Docker, Kubernetes and Argo CD</footer>
 </body>
 </html>
